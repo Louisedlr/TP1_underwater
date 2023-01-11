@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #97B3C9;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+
+}
+
+
+.title p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #0F1B33;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 35px;
+    margin: 0px;
+
+
+
+}
+
+.title {
+    margin-left: 5%;
+    margin-right: 2%;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-game {
+    position: relative;
+    background-color: #2C4E7E;
+    border-radius: 20px;
+    background-image: url("../images/fond_intro.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.intro-game p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.button-play {
+    height: 50px;
+    border: solid #0F1B33;
+    width: 100px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+
+
+}
+
+.button-play:hover {
+    height: 50px;
+    background-color: #0F1B33;
+    width: 100px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+
+.button-play h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #0F1B33;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+.button-play:hover h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+
+
+.frame-game {
+
+    width: 1000px;
+    height: 420px;
+    overflow: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    display: none;
+
+
+}
+
+.frame-game img {
+    width: 1700px;
+
+}
+
+.frame {
+    padding: 20px;
+    background-color: #0F1B33;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.top-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin-bottom: 5%;
+    ;
+}
+
+.sound img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+
+.fish img {
+    width: 100px;
+    margin-top: 50px;
+
+    align-items: center;
+    animation: floater 3s ease-in-out infinite;
+}
+
+
+
+.score p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.score {
+    margin-top: 60%;
+}
+
+.right-column {
+    margin-right: 5%;
+}
+
+.inventory img {
+    width: 600px;
+    margin-left: 2%;
+
+    z-index: 1;
+}
+
+.inventory {
+    position: relative;
+}
+
+.lifeline img {
+    width: 600px;
+    z-index: 1;
+
+}
+
+.lifeline {
+    margin-right: 2%;
+    position: relative;
+}
+
+.shark img {
+    width: 150px;
+    transform: scaleX(-1);
+    position: absolute;
+    top: -45px;
+    left: -40px;
+
+    z-index: 2;
+
+
+
+}
+
+.shark-anim {
+    animation: timer 35s;
+    animation-timing-function: linear;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+
+}
+
+#shell-frame img {
+    position: absolute;
+}
+
+
+#shell1 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +15px;
+    left: +20px;
+
+}
+
+#shell1-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +70px;
+}
+
+#shell2 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +15px;
+    left: +95px;
+
+}
+
+#shell2-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +145px;
+}
+
+
+#shell3 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +13px;
+    left: +170px;
+
+}
+
+#shell3-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +220px;
+}
+
+#shell4 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +10px;
+    left: +240px;
+
+}
+
+#shell4-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +290px;
+}
+
+#shell5 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +20px;
+    left: +315px;
+
+}
+
+#shell5-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +365px;
+}
+
+#shell6 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +17px;
+    left: +385px;
+
+}
+
+#shell6-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +435px;
+}
+
+#shell7 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +17px;
+    left: +460px;
+
+}
+
+#shell7-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +510px;
+}
+
+#shell8 {
+    width: 0px;
+    position: absolute;
+    z-index: 2;
+    top: +15px;
+    left: +535px;
+
+}
+
+#shell8-text {
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0px;
+    z-index: 3;
+    top: +25px;
+    left: +585px;
+}
+
+.fish-home {
+    display: none;
+
+
+}
+
+.cave {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.cave img {
+    width: 550px;
+}
+
+.fish-in-cave {
+    position: absolute;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+}
+
+.fish-in-cave img {
+    width: 125px;
+
+    animation: floater 3s ease-in-out infinite;
+}
+
+
+#shell-taille {
+    width: 50px;
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    left: 100px
+}
+
+#sound-off {
+    display: none;
+    margin-left: 17%;
+}
+
+#sound-on {
+    display: block;
+    margin-left: 17%;
+}
+
+
+
+/* Animation */
+
+@keyframes timer {
+    100% {
+        left: 500px
+    }
+}
+
+@keyframes floater {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}

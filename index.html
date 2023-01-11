@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Underwater</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="top-page">
+        <div class="title">
+            <p>UNDERWATER</p>
+        </div>
+        <div class="intro-game">
+            <div class="text">
+                <p class="text-intro">Hey, bienvenue dans Underwater, Cali la méduse a besoin de ton aide. Un méchant
+                    requin la pourchasse et sa grotte ne la protège pas assez. Aide Cali en rassemblant un maximum de
+                    coquillages devant sa grotte pour la protéger. Attention il faut faire vite car le requin se
+                    rapproche rapidement.
+
+                </p>
+                <p class="text-intro">
+                    <strong>Règle du game :</strong>
+                    Clic sur le maximum de coquillages pour les mettre dans ton inventaire. Une fois cela fait tu peux
+                    cliquer sur Cali la méduse qui se trouve à droite de l’écran pour accéder à sa grotte. Ensuite clic
+                    sur un coquillage dans ton inventaire puis sur la grotte de Cali pour le poser.
+                    Il te faut un score de 100 pour que Cali soit suffisamment protégé.
+                </p>
+                <p><strong>Bonne Chance !</strong> </p>
+
+            </div>
+            <div class="button-play">
+                <h1>JOUER</h1>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="frame-game">
+                <img src="./images/background.jpg">
+                <div id="shell-frame">
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="sound">
+                <img id="sound-on" src="./images/hippocampe.png">
+                <img id="sound-off" src="./images/hippocampe_avec_bulle.png">
+                <audio id="music" src="./audio/music.mp3"></audio>
+            </div>
+            <div class="fish">
+                <img src="./images/meduse.png">
+            </div>
+            <div class="score">
+                <p> <strong>Score : </strong></p>
+                <p id="point">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fish-home">
+        <div class="cave">
+            <img src="./images/grotte.png">
+            <div class="fish-in-cave">
+                <img src="./images/meduse.png">
+            </div>
+            <div class="shell-in-cave">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="inventory">
+            <img src="./images/inventaire.svg">
+            <div class="shell">
+                <img id="shell1" src="./images/shell1.svg">
+                <p id="shell1-text">0</p>
+                <img id="shell2" src="./images/shell2.svg">
+                <p id="shell2-text">0</p>
+                <img id="shell3" src="./images/shell3.svg">
+                <p id="shell3-text">0</p>
+                <img id="shell4" src="./images/shell4.svg">
+                <p id="shell4-text">0</p>
+                <img id="shell5" src="./images/shell5.svg">
+                <p id="shell5-text">0</p>
+                <img id="shell6" src="./images/shell6.svg">
+                <p id="shell6-text">0</p>
+                <img id="shell7" src="./images/shell7.svg">
+                <p id="shell7-text">0</p>
+                <img id="shell8" src="./images/shell8.svg">
+                <p id="shell8-text">0</p>
+            </div>
+        </div>
+        <div class="lifeline">
+            <img src="./images/ligne_temps.svg">
+            <div class="shark">
+                <img class="shark-img" src="./images/shark.png">
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
